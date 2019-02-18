@@ -1,0 +1,27 @@
+﻿<html>
+	<head>
+		<title>进销存系统</title>
+	</head>
+	<body>
+		<h1>欢迎使用进销存系统</h1>
+		<h3>操作商品</h3>
+		<form action="Modify" method="POST">
+			商品名称：<input type="text" name="name" />
+			数量：<input type="text" name="num" />
+			单价：<input type="text" name="price" />
+			<br/>
+			操作方式：<input type="radio" name="method" value="buy"/>购进
+			<input type="radio" name="method" value="sell"/>销售
+			<input type="submit" value="确认" />
+		</form>
+		<h3>查询商品</h3>
+		<form action="Inquire" method="GET">
+		<input type="radio" name="method" value="one"/>查询目标商品：
+		<input type="text" name="name" />
+		<br/>
+		<input type="radio" name="method" value="all"/>查询所有商品：
+		<br/>
+		<input type="submit" value="查询" />
+		</form>
+	</body>
+</html>
